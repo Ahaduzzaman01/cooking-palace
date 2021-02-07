@@ -6,12 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cooking Palace</title>
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- external css link -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <script src="script.js"></script>
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent w-75 m-auto">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">Cooking Palace</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#">Recipes</a>
+                    <a class="nav-link" href="#">Blog</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- search bar -->
+    <div class="input-group mb-3 w-50 mx-auto mt-5">
+        <input id="get-input" type="text" class="form-control" placeholder="Search for Meal...">
+        <button id="search-button" class="btn btn-secondary" type="button">Search</button>
+    </div>
+
+    <!-- ingredients section -->
+    <div id="meal-ingredients">
+    </div>
+
+    <!-- meal items -->
+    <div id="mealBoxContainer" class="mt-5">
+    </div>
+
+    <script src="script.js">
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,23 @@
+body {
+  background-color: #edd263;
+}
+
+#mealBoxContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+
+.meal-item-container {
+  width: 265px;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.meal-name {
+  padding: 0.5rem;
+}
+
+.view-button {
+  margin-left: 70px;
+}
